@@ -1,0 +1,36 @@
+{
+  "replay": {
+    "id": "47e299c828980d963315",
+    "source": "synthetic",
+    "created_at": "2025-04-30T20:00:00+08:00",
+    "target_day": "2025-05-01",
+    "exercise": "Bench press",
+    "equipment": "demo-flat-bench-A",
+    "weight_kg": 50.0,
+    "cutoff": "2025-04-29",
+    "prediction": 9.0,
+    "model": "last_validation_fallback",
+    "suggestion": "维持当前重量与目标次数；记录实际完成次数和主观强度，再判断是否调整。",
+    "actual": 9.0,
+    "actual_day": "2025-05-01",
+    "adopted": null,
+    "feedback_note": "Synthetic chronological replay; adoption unknown"
+  },
+  "next": {
+    "id": "db97a910745672004d2c",
+    "source": "synthetic",
+    "created_at": "2025-05-02T20:00:00+08:00",
+    "target_day": "2025-05-03",
+    "exercise": "Bench press",
+    "equipment": "demo-flat-bench-A",
+    "weight_kg": 50.0,
+    "cutoff": "2025-05-01",
+    "prediction": 9.0,
+    "model": "last_validation_fallback",
+    "suggestion": "维持当前重量与目标次数；记录实际完成次数和主观强度，再判断是否调整。",
+    "actual": null,
+    "actual_day": null,
+    "adopted": null,
+    "feedback_note": null
+  }
+}

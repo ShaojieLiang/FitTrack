@@ -1,0 +1,1380 @@
+{
+  "source": "synthetic",
+  "synthetic": true,
+  "target": "next comparable first work-set reps",
+  "method": "expanding-window, one session ahead; fixed Ridge alpha=10; train-only preprocessing",
+  "minimum_training_samples": 12,
+  "feature_names": [
+    "last_reps",
+    "mean_last_3",
+    "change_last_3",
+    "gap_days",
+    "sessions_previous_7_days",
+    "weight_median_previous_7_days",
+    "bodyfat_median_previous_7_days"
+  ],
+  "comparable_sessions": 120,
+  "excluded": {
+    "ambiguous_multiple_sessions_same_day": 0
+  },
+  "test_samples": 90,
+  "mae_reps": {
+    "last": 1.0889,
+    "mean3": 0.963,
+    "ridge_training": 1.0912,
+    "ridge_body": 1.1142
+  },
+  "predictions": [
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-01-31",
+      "train_cutoff": "2025-01-29",
+      "train_samples": 12,
+      "actual": 11.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 8.31520328308483,
+        "ridge_body": 8.43442508289993
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-02",
+      "train_cutoff": "2025-01-31",
+      "train_samples": 13,
+      "actual": 8.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 9.666666666666666,
+        "ridge_training": 9.437241396429181,
+        "ridge_body": 9.909462001439007
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-04",
+      "train_cutoff": "2025-02-02",
+      "train_samples": 14,
+      "actual": 7.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.518904156621524,
+        "ridge_body": 9.115603051579708
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-06",
+      "train_cutoff": "2025-02-04",
+      "train_samples": 15,
+      "actual": 7.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 7.763899761358594,
+        "ridge_body": 8.052396596754594
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-08",
+      "train_cutoff": "2025-02-06",
+      "train_samples": 16,
+      "actual": 8.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 7.333333333333333,
+        "ridge_training": 7.996078673101975,
+        "ridge_body": 8.06614565819669
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-10",
+      "train_cutoff": "2025-02-08",
+      "train_samples": 17,
+      "actual": 6.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 7.333333333333333,
+        "ridge_training": 8.33676698694358,
+        "ridge_body": 8.450651900956016
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-12",
+      "train_cutoff": "2025-02-10",
+      "train_samples": 18,
+      "actual": 9.0,
+      "predictions": {
+        "last": 6.0,
+        "mean3": 7.0,
+        "ridge_training": 7.708120711073789,
+        "ridge_body": 7.596920457486681
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-14",
+      "train_cutoff": "2025-02-12",
+      "train_samples": 19,
+      "actual": 8.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 7.666666666666667,
+        "ridge_training": 8.205774508675557,
+        "ridge_body": 8.180989441946156
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-16",
+      "train_cutoff": "2025-02-14",
+      "train_samples": 20,
+      "actual": 7.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 7.666666666666667,
+        "ridge_training": 8.276375353488344,
+        "ridge_body": 8.305077709676592
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-18",
+      "train_cutoff": "2025-02-16",
+      "train_samples": 21,
+      "actual": 6.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 8.0,
+        "ridge_training": 7.909839825170983,
+        "ridge_body": 7.86706827269349
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-20",
+      "train_cutoff": "2025-02-18",
+      "train_samples": 22,
+      "actual": 7.0,
+      "predictions": {
+        "last": 6.0,
+        "mean3": 7.0,
+        "ridge_training": 7.6025971940452575,
+        "ridge_body": 7.518971574591471
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-22",
+      "train_cutoff": "2025-02-20",
+      "train_samples": 23,
+      "actual": 8.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 6.666666666666667,
+        "ridge_training": 7.7695447385176415,
+        "ridge_body": 7.5747801310804395
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-24",
+      "train_cutoff": "2025-02-22",
+      "train_samples": 24,
+      "actual": 7.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 7.0,
+        "ridge_training": 8.099788732324125,
+        "ridge_body": 7.944823760776683
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-26",
+      "train_cutoff": "2025-02-24",
+      "train_samples": 25,
+      "actual": 9.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 7.333333333333333,
+        "ridge_training": 7.762558144561085,
+        "ridge_body": 7.550029355950911
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-02-28",
+      "train_cutoff": "2025-02-26",
+      "train_samples": 26,
+      "actual": 8.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 8.0,
+        "ridge_training": 8.077902219027573,
+        "ridge_body": 7.9971021355238285
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-02",
+      "train_cutoff": "2025-02-28",
+      "train_samples": 27,
+      "actual": 11.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 8.0,
+        "ridge_training": 8.026736852163985,
+        "ridge_body": 7.929096779567848
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-04",
+      "train_cutoff": "2025-03-02",
+      "train_samples": 28,
+      "actual": 8.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.513650519677928,
+        "ridge_body": 8.504847591017112
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-06",
+      "train_cutoff": "2025-03-04",
+      "train_samples": 29,
+      "actual": 8.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 9.0,
+        "ridge_training": 8.145141408246795,
+        "ridge_body": 8.140500808569572
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-08",
+      "train_cutoff": "2025-03-06",
+      "train_samples": 30,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 9.0,
+        "ridge_training": 7.72710445387228,
+        "ridge_body": 7.693964623534741
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-10",
+      "train_cutoff": "2025-03-08",
+      "train_samples": 31,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 8.347403491646379,
+        "ridge_body": 8.465970525011135
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-12",
+      "train_cutoff": "2025-03-10",
+      "train_samples": 32,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.638196728986799,
+        "ridge_body": 8.819137227869183
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-14",
+      "train_cutoff": "2025-03-12",
+      "train_samples": 33,
+      "actual": 8.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 10.0,
+        "ridge_training": 8.796476650062287,
+        "ridge_body": 8.924487317292499
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-16",
+      "train_cutoff": "2025-03-14",
+      "train_samples": 34,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.244519329008208,
+        "ridge_body": 8.399351185196068
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-18",
+      "train_cutoff": "2025-03-16",
+      "train_samples": 35,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.654636769064444,
+        "ridge_body": 8.928885249088466
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-20",
+      "train_cutoff": "2025-03-18",
+      "train_samples": 36,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 8.857679372190779,
+        "ridge_body": 9.025494127934877
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-22",
+      "train_cutoff": "2025-03-20",
+      "train_samples": 37,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 10.0,
+        "ridge_training": 9.048022204573128,
+        "ridge_body": 9.180355683221464
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-24",
+      "train_cutoff": "2025-03-22",
+      "train_samples": 38,
+      "actual": 11.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 10.0,
+        "ridge_training": 9.141819004160203,
+        "ridge_body": 9.420113458307446
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-26",
+      "train_cutoff": "2025-03-24",
+      "train_samples": 39,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 9.602661713806619,
+        "ridge_body": 10.037345198785008
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-28",
+      "train_cutoff": "2025-03-26",
+      "train_samples": 40,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 10.666666666666666,
+        "ridge_training": 9.89850878935997,
+        "ridge_body": 10.31701451874787
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-03-30",
+      "train_cutoff": "2025-03-28",
+      "train_samples": 41,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.0,
+        "ridge_training": 10.125361061350256,
+        "ridge_body": 9.968310204663663
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-01",
+      "train_cutoff": "2025-03-30",
+      "train_samples": 42,
+      "actual": 13.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.0,
+        "ridge_training": 10.221137518085037,
+        "ridge_body": 10.07379767427168
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-03",
+      "train_cutoff": "2025-04-01",
+      "train_samples": 43,
+      "actual": 12.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.31131106236095,
+        "ridge_body": 11.146869011474045
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-05",
+      "train_cutoff": "2025-04-03",
+      "train_samples": 44,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 12.0,
+        "ridge_training": 11.329625837913854,
+        "ridge_body": 11.461592003419852
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-07",
+      "train_cutoff": "2025-04-05",
+      "train_samples": 45,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 11.538813504202887,
+        "ridge_body": 11.760947231502225
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-09",
+      "train_cutoff": "2025-04-07",
+      "train_samples": 46,
+      "actual": 11.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 12.0,
+        "ridge_training": 11.40959590553033,
+        "ridge_body": 11.469134076228242
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-11",
+      "train_cutoff": "2025-04-09",
+      "train_samples": 47,
+      "actual": 9.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 10.925872489665934,
+        "ridge_body": 11.180845435539203
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-13",
+      "train_cutoff": "2025-04-11",
+      "train_samples": 48,
+      "actual": 13.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 10.666666666666666,
+        "ridge_training": 9.736139126875104,
+        "ridge_body": 10.088822492869863
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-15",
+      "train_cutoff": "2025-04-13",
+      "train_samples": 49,
+      "actual": 9.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 11.0,
+        "ridge_training": 11.013122585953635,
+        "ridge_body": 11.297976784709387
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-17",
+      "train_cutoff": "2025-04-15",
+      "train_samples": 50,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 9.765891726134912,
+        "ridge_body": 10.336144977247082
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-19",
+      "train_cutoff": "2025-04-17",
+      "train_samples": 51,
+      "actual": 12.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 10.008212496362237,
+        "ridge_body": 10.274990590920297
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-21",
+      "train_cutoff": "2025-04-19",
+      "train_samples": 52,
+      "actual": 10.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 10.0,
+        "ridge_training": 9.927550132870731,
+        "ridge_body": 10.078019760821327
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-23",
+      "train_cutoff": "2025-04-21",
+      "train_samples": 53,
+      "actual": 11.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 9.885470393434453,
+        "ridge_body": 10.246176591109961
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-25",
+      "train_cutoff": "2025-04-23",
+      "train_samples": 54,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.0,
+        "ridge_training": 10.719797438515554,
+        "ridge_body": 10.875070087110572
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-27",
+      "train_cutoff": "2025-04-25",
+      "train_samples": 55,
+      "actual": 9.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 10.666666666666666,
+        "ridge_training": 10.326920399983088,
+        "ridge_body": 11.031301340864474
+      }
+    },
+    {
+      "exercise": "Bench press",
+      "equipment": "demo-flat-bench-A",
+      "weight_kg": 50.0,
+      "day": "2025-04-29",
+      "train_cutoff": "2025-04-27",
+      "train_samples": 56,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 10.04358185737853,
+        "ridge_body": 10.525913452533942
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-01-31",
+      "train_cutoff": "2025-01-29",
+      "train_samples": 12,
+      "actual": 9.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 10.666666666666666,
+        "ridge_training": 10.535528558888029,
+        "ridge_body": 10.837522700387881
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-02",
+      "train_cutoff": "2025-01-31",
+      "train_samples": 13,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 10.333333333333334,
+        "ridge_training": 10.090147731954083,
+        "ridge_body": 10.223969147790369
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-04",
+      "train_cutoff": "2025-02-02",
+      "train_samples": 14,
+      "actual": 8.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.666666666666666,
+        "ridge_training": 9.600923316320003,
+        "ridge_body": 9.59755840994183
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-06",
+      "train_cutoff": "2025-02-04",
+      "train_samples": 15,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 8.987933537965153,
+        "ridge_body": 8.619633668549397
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-08",
+      "train_cutoff": "2025-02-06",
+      "train_samples": 16,
+      "actual": 10.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.0,
+        "ridge_training": 9.457396044564707,
+        "ridge_body": 9.396023716421945
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-10",
+      "train_cutoff": "2025-02-08",
+      "train_samples": 17,
+      "actual": 9.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 9.550777713224898,
+        "ridge_body": 9.634848520937036
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-12",
+      "train_cutoff": "2025-02-10",
+      "train_samples": 18,
+      "actual": 8.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.666666666666666,
+        "ridge_training": 9.396223738891173,
+        "ridge_body": 9.36024906020762
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-14",
+      "train_cutoff": "2025-02-12",
+      "train_samples": 19,
+      "actual": 9.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 9.0,
+        "ridge_training": 9.036260027196017,
+        "ridge_body": 9.068797343548246
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-16",
+      "train_cutoff": "2025-02-14",
+      "train_samples": 20,
+      "actual": 8.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 9.224966651044905,
+        "ridge_body": 9.302060231522917
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-18",
+      "train_cutoff": "2025-02-16",
+      "train_samples": 21,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 8.333333333333334,
+        "ridge_training": 8.930704726537964,
+        "ridge_body": 8.90937486090767
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-20",
+      "train_cutoff": "2025-02-18",
+      "train_samples": 22,
+      "actual": 9.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.0,
+        "ridge_training": 9.398895715403134,
+        "ridge_body": 9.38905179402406
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-22",
+      "train_cutoff": "2025-02-20",
+      "train_samples": 23,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.0,
+        "ridge_training": 9.24785034525065,
+        "ridge_body": 9.224127583943249
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-24",
+      "train_cutoff": "2025-02-22",
+      "train_samples": 24,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 9.213603894697046,
+        "ridge_body": 9.155773635928744
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-26",
+      "train_cutoff": "2025-02-24",
+      "train_samples": 25,
+      "actual": 7.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.0,
+        "ridge_training": 9.199621860535094,
+        "ridge_body": 9.108749442045074
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-02-28",
+      "train_cutoff": "2025-02-26",
+      "train_samples": 26,
+      "actual": 8.0,
+      "predictions": {
+        "last": 7.0,
+        "mean3": 8.333333333333334,
+        "ridge_training": 8.716370028609603,
+        "ridge_body": 8.661251894938232
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-02",
+      "train_cutoff": "2025-02-28",
+      "train_samples": 27,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 8.0,
+        "ridge_training": 8.760561994307306,
+        "ridge_body": 8.637325079698636
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-04",
+      "train_cutoff": "2025-03-02",
+      "train_samples": 28,
+      "actual": 8.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 8.333333333333334,
+        "ridge_training": 9.337911213310706,
+        "ridge_body": 9.17013094204245
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-06",
+      "train_cutoff": "2025-03-04",
+      "train_samples": 29,
+      "actual": 10.0,
+      "predictions": {
+        "last": 8.0,
+        "mean3": 8.666666666666666,
+        "ridge_training": 8.90644702395071,
+        "ridge_body": 8.821434580829694
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-08",
+      "train_cutoff": "2025-03-06",
+      "train_samples": 30,
+      "actual": 9.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 9.257824400824616,
+        "ridge_body": 9.15860158459559
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-10",
+      "train_cutoff": "2025-03-08",
+      "train_samples": 31,
+      "actual": 9.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.0,
+        "ridge_training": 9.10811050200805,
+        "ridge_body": 9.047383285782153
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-12",
+      "train_cutoff": "2025-03-10",
+      "train_samples": 32,
+      "actual": 10.0,
+      "predictions": {
+        "last": 9.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 9.15814574869996,
+        "ridge_body": 9.200878537183808
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-14",
+      "train_cutoff": "2025-03-12",
+      "train_samples": 33,
+      "actual": 11.0,
+      "predictions": {
+        "last": 10.0,
+        "mean3": 9.333333333333334,
+        "ridge_training": 9.250701787670708,
+        "ridge_body": 9.163958226028585
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-16",
+      "train_cutoff": "2025-03-14",
+      "train_samples": 34,
+      "actual": 12.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 10.0,
+        "ridge_training": 9.540426922572731,
+        "ridge_body": 9.483126476476649
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-18",
+      "train_cutoff": "2025-03-16",
+      "train_samples": 35,
+      "actual": 11.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.0,
+        "ridge_training": 10.22942275628507,
+        "ridge_body": 10.138616524098772
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-20",
+      "train_cutoff": "2025-03-18",
+      "train_samples": 36,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.333333333333334,
+        "ridge_training": 10.19982642091885,
+        "ridge_body": 10.085140733965233
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-22",
+      "train_cutoff": "2025-03-20",
+      "train_samples": 37,
+      "actual": 12.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.333333333333334,
+        "ridge_training": 10.30098563234816,
+        "ridge_body": 10.305012347843066
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-24",
+      "train_cutoff": "2025-03-22",
+      "train_samples": 38,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.333333333333334,
+        "ridge_training": 10.808265094089881,
+        "ridge_body": 10.856895882480552
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-26",
+      "train_cutoff": "2025-03-24",
+      "train_samples": 39,
+      "actual": 13.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.099495138446311,
+        "ridge_body": 11.289624770328453
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-28",
+      "train_cutoff": "2025-03-26",
+      "train_samples": 40,
+      "actual": 13.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 11.951432578997382,
+        "ridge_body": 12.07045298474539
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-03-30",
+      "train_cutoff": "2025-03-28",
+      "train_samples": 41,
+      "actual": 13.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 12.666666666666666,
+        "ridge_training": 12.267304030781727,
+        "ridge_body": 12.026468734219524
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-01",
+      "train_cutoff": "2025-03-30",
+      "train_samples": 42,
+      "actual": 11.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 13.0,
+        "ridge_training": 12.525473655336619,
+        "ridge_body": 12.253156912771765
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-03",
+      "train_cutoff": "2025-04-01",
+      "train_samples": 43,
+      "actual": 13.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 11.305540846292633,
+        "ridge_body": 11.21896876965265
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-05",
+      "train_cutoff": "2025-04-03",
+      "train_samples": 44,
+      "actual": 11.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 12.114726647580579,
+        "ridge_body": 12.051541104695927
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-07",
+      "train_cutoff": "2025-04-05",
+      "train_samples": 45,
+      "actual": 13.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.091771043623584,
+        "ridge_body": 11.499142201413985
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-09",
+      "train_cutoff": "2025-04-07",
+      "train_samples": 46,
+      "actual": 12.0,
+      "predictions": {
+        "last": 13.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 12.0844039697456,
+        "ridge_body": 12.017655023222703
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-11",
+      "train_cutoff": "2025-04-09",
+      "train_samples": 47,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 12.0,
+        "ridge_training": 11.59868064289615,
+        "ridge_body": 11.646206718878418
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-13",
+      "train_cutoff": "2025-04-11",
+      "train_samples": 48,
+      "actual": 11.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 12.333333333333334,
+        "ridge_training": 11.829998434075563,
+        "ridge_body": 11.851825180188147
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-15",
+      "train_cutoff": "2025-04-13",
+      "train_samples": 49,
+      "actual": 12.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.16430587200976,
+        "ridge_body": 11.17954067873595
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-17",
+      "train_cutoff": "2025-04-15",
+      "train_samples": 50,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.468325453833105,
+        "ridge_body": 11.569266575719976
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-19",
+      "train_cutoff": "2025-04-17",
+      "train_samples": 51,
+      "actual": 11.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.46556679165738,
+        "ridge_body": 11.431923348330375
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-21",
+      "train_cutoff": "2025-04-19",
+      "train_samples": 52,
+      "actual": 12.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.219263823646775,
+        "ridge_body": 10.872275271660829
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-23",
+      "train_cutoff": "2025-04-21",
+      "train_samples": 53,
+      "actual": 12.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.50539876260982,
+        "ridge_body": 11.42771647266941
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-25",
+      "train_cutoff": "2025-04-23",
+      "train_samples": 54,
+      "actual": 11.0,
+      "predictions": {
+        "last": 12.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.481363836932887,
+        "ridge_body": 11.449891738211576
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-27",
+      "train_cutoff": "2025-04-25",
+      "train_samples": 55,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.666666666666666,
+        "ridge_training": 11.265608460190318,
+        "ridge_body": 11.69214308261425
+      }
+    },
+    {
+      "exercise": "Seated row",
+      "equipment": "demo-cable-A",
+      "weight_kg": 40.0,
+      "day": "2025-04-29",
+      "train_cutoff": "2025-04-27",
+      "train_samples": 56,
+      "actual": 11.0,
+      "predictions": {
+        "last": 11.0,
+        "mean3": 11.333333333333334,
+        "ridge_training": 11.097165160086305,
+        "ridge_body": 11.368965221736287
+      }
+    }
+  ],
+  "limitation": "Synthetic results validate software only; effort, rest and equipment metadata may limit real comparability."
+}

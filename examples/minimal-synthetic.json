@@ -1,0 +1,26 @@
+{
+  "provenance": "SYNTHETIC example; invented values only",
+  "sessions": [
+    {
+      "id": "synthetic-example-001",
+      "day": "2025-01-01",
+      "title": "Example strength session",
+      "movements": [
+        {
+          "exercise": "Bench press",
+          "equipment": "demo-flat-bench-A",
+          "sets": [
+            {"kind": "warmup", "done": true, "weight": 25, "unit": "kg", "reps": 12},
+            {"kind": "work", "done": true, "weight": 50, "unit": "kg", "reps": 8, "rpe": 8},
+            {"kind": "work", "done": false, "weight": 50, "unit": "kg", "reps": 8},
+            {"kind": null, "done": true, "weight": 50, "unit": "kg", "reps": 6}
+          ]
+        }
+      ]
+    }
+  ],
+  "body": [
+    {"day": "2025-01-01", "metric": "weight", "value": 74, "unit": "kg", "measured_at": "2025-01-01T07:30:00+08:00"},
+    {"day": "2025-01-01", "metric": "bodyfat", "value": 21, "unit": "%", "measured_at": null}
+  ]
+}
